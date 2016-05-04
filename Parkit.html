@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <meta charset="utf-8">
+  <title>Parkit</title>
+  <meta name="description" content="PROFILE">
+  <script src="./js/jquery-2.2.3.min.js"></script>
+  <script src="./js/bootstrap.min.js"></script>
+  <script src="./js/angular.min.js"></script>
+  <script src="parkitscript.js"></script>
+
+  <link rel="stylesheet" href="./css/bootstrap.min.css">
+<title></title>
+</head>
+<body ng-app="parkIt">
+
+  <div class="jumbotron text-center">
+   <div class="container">
+   <h1>PARKIT</h1>
+</div>
+</div>
+<hr>
+
+  <div class="container text-center">
+     <img src="dwp15-djakarta-warehouse-project-2015.jpg" class="image-responsive" alt="image" style="max-height:800px;"></img>
+
+    <hr>
+
+    <!--button-group-->
+    <div ng-controller="CounterController" class="row">
+    <div class="col-sm-4 col-sm-offset-1">
+      <button ng-click="increment();" class="btn btn-primary">
+        Cancel Booking
+      </button>
+    </div>
+
+    <div class="col-sm-2">
+      Parking Spots Left: {{count}}
+    </div>
+
+  <div class="container col-sm-4">
+   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-1">
+     Book Parking
+   </button>
+   <div class="modal" id="modal-1">
+      <div class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <button type="button" class="close" data-dismiss="modal">&times;</button>
+            <h2 class="modal-title">Register</h2>
+          </div>
+            <div class="modal-body">
+              <form action="" class="form-horizontal">
+                <div class="form-group">
+                  <label for="user-name" class="col-lg-2 control-label" >No Polisi</label>
+                  <div class="col-lg-8">
+                    <input type="text" class="form-control" id="user-name" placeholder="Enter your Nopol">
+                  </div>
+                </div>
+        ​
+                <div class="form-group">
+                  <label for="user-name" class="col-lg-2 control-label" >Name</label>
+                  <div class="col-lg-8">
+                    <input type="text" class="form-control" id="user-email" placeholder="Enter your Name">
+                  </div>
+                </div>
+
+                <div class="form-group">
+                  <div class="col-lg-10 col-lg-offset-1">
+                   <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#modal-2" ng-click="decrement();">
+                     Book Now
+                   </button>
+                   <div class="modal" id="modal-2">
+                      <div class="modal-dialog">
+                        <div class="modal-content">
+                          <div class="modal-header">
+                            <button type="button" class="close" data-dismiss="modal">&times;</button>
+                            <h2 class="modal-title">Congratulations you've been registered</h2>
+                          </div>
+                  </div>
+                </div>
+        ​
+              </form>
+        </div>
+        ​</div>
+      </div>
+    </div>
+  </div>
+</div>
+</div>
+</div>
+</div>
+
+<div id="footer">
+  <hr>
+  <div class="container text-center">
+    <ul class="list-inline">
+      <li><a href=""> Twitter </a></li>
+      <li><a href=""> Youtube </a></li>
+      <li><a href=""> Facebook </a></li>
+    </ul>
+  </div>
+  <div class="container text-center">
+  <p> &copy; Copyright @ 2016 </p>
+  </div>
+</div>
+
+  <!-- Latest compiled and minified JavaScript -->
+</body>
+</html>
