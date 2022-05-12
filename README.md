@@ -1,2 +1,3 @@
 # Parqeet
-as is
+
+Parking system for events
